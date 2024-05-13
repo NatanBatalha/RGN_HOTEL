@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background: #3195ac;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    width: 300px;
+    color: white;
+    border:2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+input{
+    border: none;
+}
+
+input, button{
+    padding: 10px;
+    margin-bottom: 10px;
+    width: -webkit-fill-available;
+}
+
+button{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.logo{
+}
+
+.logo img{
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+}

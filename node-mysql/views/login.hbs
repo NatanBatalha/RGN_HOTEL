@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body class="centralize">
+   <form action="/auth/login" method="post">
+    <div class="logo">
+        <img src="./img/logo.png" alt="Caddie">
+    </div>
+    <div class="login">
+        <label for="">E-mail:</label>
+        <input type="email" name="email" id="email" onchange="validateFields()" placeholder="seu e-mail"/>
+    </div>
+    <div class="password">
+        <label for="password">Senha:</label>
+        <input type="password" name="password" id="password" onchange="validateFields()" placeholder="Sua Senha"/>
+    </div>
+    <div class="recover">
+        <button type="button" id="recover-password-button" onclick="recoverPassword()" disabled="true" >Recuperar a Senha</button>
+    </div>
+
+    <div class="access">
+        <button type="submit" id="login-button">Acessar a plataforma</button>
+    </div>
+
+    <div class="register">
+        <button type="button" onclick="location.href='/register'" >Registrar</button>
+    </div>
+   </form>
+</body>
+
+<!--<script src="./loading.js"></script>
+<script src="./index.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-auth-compat.js"></script>
+<script src="../clientMenu/auth.guard.js"></script>
+<script src="../clientMenu/clientMenu.js"></script>
+
+<script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyAvreyuHor7lzLYsU--vdBERoDMWaLLJLQ",
+        authDomain: "caddie-capitl.firebaseapp.com",
+        projectId: "caddie-capitl",
+        storageBucket: "caddie-capitl.appspot.com",
+        messagingSenderId: "522643853746",
+        appId: "1:522643853746:web:cdfb1077bfbac427ef14ab"
+    };
+    firebase.initializeApp(firebaseConfig);-->
+</script>
+</html>
